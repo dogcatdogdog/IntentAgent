@@ -1,0 +1,265 @@
+{
+  "mission_zones": [
+    {
+      "zone_id": "ZONE-01",
+      "name": "一号高地",
+      "aliases": ["1号高地", "1号区域", "一号区域", "高地"],
+      "terrain_features": ["开阔平原", "高海拔山地"],
+      "threat_assessment": {"level": "Low", "known_threats": ["零星无线电监听哨", "常规轻武器警戒"]},
+      "strategic_value": "制高点，适合建立前线通信中继与大范围雷达预警"
+    },
+    {
+      "zone_id": "ZONE-02",
+      "name": "二号深水海湾",
+      "aliases": ["2号海湾", "2号区域", "二号区域", "暗礁区", "湾子", "深水港"],
+      "terrain_features": ["深水港口", "复杂海岸线", "暗礁群"],
+      "threat_assessment": {"level": "High", "known_threats": ["敌方水下声呐阵列", "反舰导弹阵地"]},
+      "strategic_value": "敌方海军补给枢纽，高价值战略目标"
+    },
+    {
+      "zone_id": "ZONE-03",
+      "name": "三号近岸枢纽",
+      "aliases": ["3号区域", "三号区域", "3号枢纽", "近岸枢纽", "水陆交汇点"],
+      "terrain_features": ["近岸水域", "陆域建筑群", "低空通道"],
+      "threat_assessment": {"level": "High", "known_threats": ["外围警戒快艇", "防空雷达", "机动火力点"]},
+      "strategic_value": "水陆两栖交汇点，敌方关键物资增援通道"
+    },
+    {
+      "zone_id": "ZONE-04",
+      "name": "四号隐蔽山谷",
+      "aliases": ["4号山谷", "4号区域", "四号区域", "隐蔽山谷", "峡谷"],
+      "terrain_features": ["茂密植被", "峡谷地形", "喀斯特地貌"],
+      "threat_assessment": {"level": "Medium", "known_threats": ["伪装防空导弹阵地", "游动哨"]},
+      "strategic_value": "敌方火箭炮隐蔽发射阵地及弹药囤积点"
+    },
+    {
+      "zone_id": "ZONE-05",
+      "name": "五号城市边缘",
+      "aliases": ["5号城市", "5号区域", "五号区域", "城市废墟", "工业区"],
+      "terrain_features": ["废弃工业区", "密集楼宇", "地下管网"],
+      "threat_assessment": {"level": "Extreme", "known_threats": ["强电磁干扰环境", "大量狙击点", "反坦克雷区"]},
+      "strategic_value": "战略纵深门户，城市巷战核心前沿"
+    }
+  ],
+  "available_units": [
+    {
+      "unit_id": "UAV-01",
+      "name": "无人机一号高空侦察组",
+      "domain": "空中单元",
+      "status": "Standby",
+      "protocol": "MAVLink-ENC",
+      "capabilities": "大范围光电扫描、SAR雷达成像",
+      "sub_function": "战略侦察"
+    },
+    {
+      "unit_id": "UAV-02",
+      "name": "无人机二号火力打击组",
+      "domain": "空中单元",
+      "status": "Deployed",
+      "protocol": "MAVLink-ENC",
+      "capabilities": "防区外精准打击、激光引导投弹",
+      "sub_function": "对地打击"
+    },
+    {
+      "unit_id": "UAV-03",
+      "name": "无人机三号电子战编队",
+      "domain": "空中单元",
+      "status": "Standby",
+      "protocol": "MAVLink-ENC",
+      "capabilities": "区域电磁压制、雷达欺骗、通信阻断",
+      "sub_function": "电子对抗"
+    },
+    {
+      "unit_id": "UAV-04",
+      "name": "无人机四号通信中继机",
+      "domain": "空中单元",
+      "status": "Low_Battery",
+      "protocol": "MAVLink-ENC",
+      "capabilities": "跨视距数据链中继、宽带信号桥接",
+      "sub_function": "通信保障"
+    },
+    {
+      "unit_id": "USV-01",
+      "name": "无人船一号外围警戒组",
+      "domain": "海面单元",
+      "status": "Standby",
+      "protocol": "NMEA-0183-ENC",
+      "capabilities": "水面目标拦截、驱离、光电警戒",
+      "sub_function": "封控警戒"
+    },
+    {
+      "unit_id": "USV-02",
+      "name": "无人船二号水下侦测组",
+      "domain": "海面单元",
+      "status": "Maintenance",
+      "protocol": "NMEA-0183-ENC",
+      "capabilities": "侧扫声呐探测、水雷探查、水文测绘",
+      "sub_function": "水下侦察"
+    },
+    {
+      "unit_id": "USV-03",
+      "name": "无人船三号自杀式突击艇",
+      "domain": "海面单元",
+      "status": "Standby",
+      "protocol": "NMEA-0183-ENC",
+      "capabilities": "高速隐身突防、对水面大型目标毁灭性打击",
+      "sub_function": "特种打击"
+    },
+    {
+      "unit_id": "USV-04",
+      "name": "无人船四号反潜巡逻编队",
+      "domain": "海面单元",
+      "status": "Deployed",
+      "protocol": "NMEA-0183-ENC",
+      "capabilities": "拖曳线列阵声呐、轻型反潜鱼雷投放",
+      "sub_function": "反潜驱潜"
+    },
+    {
+      "unit_id": "UGV-01",
+      "name": "无人车一号电子侦察组",
+      "domain": "突击单元",
+      "status": "Standby",
+      "protocol": "RT-Control-ENC",
+      "capabilities": "近距频谱侦测、无线电静默渗透、抵近监听",
+      "sub_function": "战术侦察"
+    },
+    {
+      "unit_id": "UGV-02",
+      "name": "无人车二号重装火力组",
+      "domain": "突击单元",
+      "status": "Standby",
+      "protocol": "RT-Control-ENC",
+      "capabilities": "反装甲导弹发射、大口径机枪压制",
+      "sub_function": "正面突击"
+    },
+    {
+      "unit_id": "UGV-03",
+      "name": "无人车三号工程破障车",
+      "domain": "突击单元",
+      "status": "Deployed",
+      "protocol": "RT-Control-ENC",
+      "capabilities": "排雷扫雷、清除路障、填平反坦克壕",
+      "sub_function": "工程保障"
+    },
+    {
+      "unit_id": "UGV-04",
+      "name": "无人车四号后勤补给狗",
+      "domain": "突击单元",
+      "status": "Fault",
+      "protocol": "RT-Control-ENC",
+      "capabilities": "复杂地形弹药运送、伤员后撤",
+      "sub_function": "物资运输"
+    }
+  ],
+  "available_routes": [
+    {
+      "route_id": "RT-001",
+      "route_name": "零一号全域巡逻网",
+      "applicable_zones": ["ZONE-01", "ZONE-03", "ZONE-05"],
+      "description": "跨越平原、海岸至城市的超长巡航路线",
+      "segments": [{"segment_code": "P1", "domain": "全空域", "feature": "大椭圆轨迹例行巡航"}]
+    },
+    {
+      "route_id": "RT-002",
+      "route_name": "零二号高空监视走廊",
+      "applicable_zones": ["ZONE-01", "ZONE-04"],
+      "description": "连接高地与山谷的高空无盲区监视带",
+      "segments": [{"segment_code": "H1", "domain": "高空域", "feature": "平流层边缘长航时滞空"}]
+    },
+    {
+      "route_id": "RT-003",
+      "route_name": "零三号深水突袭航道",
+      "applicable_zones": ["ZONE-02"],
+      "description": "针对深水港口的反潜/特种打击专线",
+      "segments": [{"segment_code": "U1", "domain": "水下/水面", "feature": "顺洋流静默漂流接敌"}]
+    },
+    {
+      "route_id": "RT-004",
+      "route_name": "零四号立体突防航线",
+      "applicable_zones": ["ZONE-03"],
+      "description": "专为近岸复杂地形设计的海陆空火力协同通道",
+      "segments": [
+        {"segment_code": "C3", "domain": "低空域", "feature": "超低可探测高空突防"},
+        {"segment_code": "A3", "domain": "水域", "feature": "沿礁石隐蔽近岸巡航"},
+        {"segment_code": "D7", "domain": "陆域", "feature": "楼宇遮挡短直高效突防"}
+      ]
+    },
+    {
+      "route_id": "RT-005",
+      "route_name": "零五号电磁压制走廊",
+      "applicable_zones": ["ZONE-03", "ZONE-05"],
+      "description": "强电磁环境下撕裂防空网的干扰专线",
+      "segments": [{"segment_code": "E1", "domain": "中空域", "feature": "沿敌方雷达波束边缘飞行"}]
+    },
+    {
+      "route_id": "RT-006",
+      "route_name": "零六号山谷蛇形穿插线",
+      "applicable_zones": ["ZONE-04"],
+      "description": "规避山顶雷达探测的低空/地面穿插路线",
+      "segments": [{"segment_code": "V1", "domain": "超低空/地面", "feature": "贴地飞行与林间小道机动"}]
+    },
+    {
+      "route_id": "RT-007",
+      "route_name": "零七号城市下水道渗透网",
+      "applicable_zones": ["ZONE-05"],
+      "description": "地下管网隐蔽渗透路线，专供微型无人车使用",
+      "segments": [{"segment_code": "S1", "domain": "地下空间", "feature": "无GPS信号下的惯性导航穿梭"}]
+    },
+    {
+      "route_id": "RT-008",
+      "route_name": "零八号废墟隐蔽机动线",
+      "applicable_zones": ["ZONE-05"],
+      "description": "利用废弃工业区掩护的地面重装突击路线",
+      "segments": [{"segment_code": "G1", "domain": "陆域", "feature": "废墟掩体间跃进机动"}]
+    },
+    {
+      "route_id": "RT-009",
+      "route_name": "零九号近岸封锁弧线",
+      "applicable_zones": ["ZONE-02", "ZONE-03"],
+      "description": "切断深水港与近岸枢纽联系的水面封锁线",
+      "segments": [{"segment_code": "B1", "domain": "水域", "feature": "高密度环形警戒机动"}]
+    },
+    {
+      "route_id": "RT-010",
+      "route_name": "一零号高地直达运输线",
+      "applicable_zones": ["ZONE-01"],
+      "description": "后方基地直达前线高地的后勤物资补给线",
+      "segments": [{"segment_code": "T1", "domain": "低空/地面", "feature": "直线快速穿插，无视隐蔽"}]
+    },
+    {
+      "route_id": "RT-011",
+      "route_name": "一一号自杀式蜂群攻击面",
+      "applicable_zones": ["ZONE-02"],
+      "description": "多批次无人快艇饱和攻击路线",
+      "segments": [{"segment_code": "K1", "domain": "水面", "feature": "多向不规则S型规避接敌"}]
+    },
+    {
+      "route_id": "RT-012",
+      "route_name": "一二号防空诱骗轨迹",
+      "applicable_zones": ["ZONE-04", "ZONE-05"],
+      "description": "故意暴露信号吸引敌方防空火力的诱饵航线",
+      "segments": [{"segment_code": "D1", "domain": "中空域", "feature": "大RCS雷达反射面积模拟飞行"}]
+    },
+    {
+      "route_id": "RT-013",
+      "route_name": "一三号破障排雷通道",
+      "applicable_zones": ["ZONE-05"],
+      "description": "为后续装甲部队开辟的排雷清障路线",
+      "segments": [{"segment_code": "M1", "domain": "陆域", "feature": "直线低速，开启宽频扫雷"}]
+    },
+    {
+      "route_id": "RT-014",
+      "route_name": "一四号跨海空地走廊",
+      "applicable_zones": ["ZONE-01", "ZONE-02", "ZONE-03"],
+      "description": "战略级跨区大规模协同投送航线",
+      "segments": [{"segment_code": "X1", "domain": "全域", "feature": "分层立体空域管理路线"}]
+    },
+    {
+      "route_id": "RT-015",
+      "route_name": "一五号通信接力走廊",
+      "applicable_zones": ["ZONE-04"],
+      "description": "针对山谷信号盲区部署的中继机盘旋航线",
+      "segments": [{"segment_code": "R1", "domain": "中空域", "feature": "8字型定点盘旋保持信号桥接"}]
+    }
+  ]
+}

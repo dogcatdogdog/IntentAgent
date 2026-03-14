@@ -1,0 +1,15 @@
+{
+  "selected_units": [
+    "UAV-03",
+    "USV-03",
+    "UGV-02"
+  ],
+  "selected_routes": [
+    "RT-004"
+  ],
+  "selected_segments": [
+    "C3",
+    "A3",
+    "D7"
+  ]
+}
