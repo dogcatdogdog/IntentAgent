@@ -1,11 +1,14 @@
 {
   "selected_units": [
-    "USV-01"
+    "UAV-01",
+    "UGV-01"
   ],
   "selected_routes": [
-    "RT-003"
+    "RT-001",
+    "RT-010"
   ],
   "selected_segments": [
-    "U1"
+    "P1",
+    "T1"
   ]
 }

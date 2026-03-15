@@ -65,6 +65,7 @@ def main():
             data_result = process_task(task)
             status = data_result.get("status")
             context_text = data_result.get("context_text")
+            print("数据处理结果:",context_text)
             
             if status == "error":
                 print(f"   ❌ [系统异常] 数据中枢崩溃: {context_text}")

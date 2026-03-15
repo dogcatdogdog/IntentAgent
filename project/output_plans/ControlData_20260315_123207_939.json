@@ -5,11 +5,13 @@
     "UGV-02"
   ],
   "selected_routes": [
-    "RT-004"
+    "RT-001",
+    "RT-004",
+    "RT-014"
   ],
   "selected_segments": [
-    "C3",
+    "P1",
     "A3",
-    "D7"
+    "X1"
   ]
 }
